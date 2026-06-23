@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Custom Order | Fibello Concept</title>
+    <link rel="icon" type="image/png" href="fibellosweets/fibello-logo.png" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav" aria-label="Main navigation">
+        <a class="brand" href="index.html" aria-label="Fibello home"><img src="fibellosweets/fibello-logo.png" alt="Fibello Concept logo" /></a>
+        <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="contact.html">Contact Us</a>
+          <a href="locations.html">Locations</a>
+          <a class="active" href="custom-order.html">Custom Order</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page active">
+        <div class="page-hero compact">
+          <p class="eyebrow">Build your celebration</p>
+          <h1>Custom Dessert Studio</h1>
+          <p>Create a cake or dessert centerpiece for birthdays, gatherings, events, and unforgettable Fibello moments.</p>
+        </div>
+        <section class="section cake-studio">
+          <div class="cake-preview-wrap">
+            <div class="cake-preview" id="cake-preview" aria-label="Live cake preview">
+              <div class="topping-tray" id="topping-preview"></div>
+              <div class="drizzle-preview" id="drizzle-preview"></div>
+              <div class="decoration-preview" id="decoration-preview"></div>
+              <div class="cake-layer layer-three"></div>
+              <div class="cake-layer layer-two"></div>
+              <div class="cake-layer layer-one"></div>
+              <div class="candles" id="candles-preview"></div>
+            </div>
+            <div class="price-card">
+              <span>Estimated total</span>
+              <strong id="cake-price">$48</strong>
+            </div>
+          </div>
+          <form class="builder-form" id="cake-form" action="https://formsubmit.co/anikajanuzi0@gmail.com" method="POST">
+            <input type="hidden" name="_subject" value="New Fibello Concept custom order" />
+            <input type="hidden" name="_template" value="table" />
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="hidden" name="estimated_total" id="estimated-total" value="$48" />
+            <fieldset class="option-group">
+              <legend>Shape</legend>
+              <label class="option-card"><input type="radio" name="shape" value="Round" checked /><span>Round</span></label>
+              <label class="option-card"><input type="radio" name="shape" value="Square" /><span>Square</span></label>
+              <label class="option-card"><input type="radio" name="shape" value="Heart" /><span>Heart</span></label>
+              <label class="option-card"><input type="radio" name="shape" value="Custom" /><span>Custom</span></label>
+            </fieldset>
+
+            <fieldset class="option-group swatch-group">
+              <legend>Cake color</legend>
+              <label class="option-card"><input type="radio" name="flavor" value="None" /><span>None</span></label>
+              <label class="option-card"><input type="radio" name="flavor" value="Vanilla Bean" checked /><span class="swatch vanilla"></span><span>Vanilla</span></label>
+              <label class="option-card"><input type="radio" name="flavor" value="Chocolate Fudge" /><span class="swatch cocoa"></span><span>Chocolate</span></label>
+              <label class="option-card"><input type="radio" name="flavor" value="Red Velvet" /><span class="swatch velvet"></span><span>Red Velvet</span></label>
+              <label class="option-card"><input type="radio" name="flavor" value="Lemon Cloud" /><span class="swatch lemon"></span><span>Lemon</span></label>
+              <label class="color-picker-card"><input type="radio" name="flavor" value="Custom Color" /><span>Custom color</span><input type="color" name="cakeColor" value="#f5d49b" /></label>
+            </fieldset>
+
+            <fieldset class="option-group swatch-group">
+              <legend>Icing</legend>
+              <label class="option-card"><input type="radio" name="icing" value="None" /><span>None</span></label>
+              <label class="option-card"><input type="radio" name="icing" value="Vanilla Cream" checked /><span class="swatch icing-vanilla"></span><span>Vanilla</span></label>
+              <label class="option-card"><input type="radio" name="icing" value="Chocolate Ganache" /><span class="swatch icing-chocolate"></span><span>Ganache</span></label>
+              <label class="option-card"><input type="radio" name="icing" value="Strawberry Buttercream" /><span class="swatch icing-strawberry"></span><span>Strawberry</span></label>
+              <label class="option-card"><input type="radio" name="icing" value="Caramel Whip" /><span class="swatch icing-caramel"></span><span>Caramel</span></label>
+            </fieldset>
+
+            <div class="control-grid compact-controls">
+              <label>Size<select name="size"><option value="6">6 inch</option><option value="8" selected>8 inch</option><option value="10">10 inch</option><option value="12">12 inch</option></select></label>
+              <label>Layers<select name="layers"><option value="1">1 layer</option><option value="2">2 layers</option><option value="3" selected>3 layers</option></select></label>
+              <label>Candles<select name="candles"><option value="0">No candles</option><option value="3">3 candles</option><option value="6">6 candles</option><option value="12">12 candles</option></select></label>
+            </div>
+
+            <fieldset class="option-group">
+              <legend>Decorations</legend>
+              <label class="option-card"><input type="radio" name="decorations" value="None" /><span>None</span></label>
+              <label class="option-card"><input type="radio" name="decorations" value="Fresh Berries" checked /><span>Fresh Berries</span></label>
+              <label class="option-card"><input type="radio" name="decorations" value="Chocolate Drizzle" /><span>Chocolate Drizzle</span></label>
+              <label class="option-card"><input type="radio" name="decorations" value="Gold Sprinkles" /><span>Gold Sprinkles</span></label>
+              <label class="option-card"><input type="radio" name="decorations" value="Floral Piping" /><span>Floral Piping</span></label>
+            </fieldset>
+
+            <fieldset class="option-group">
+              <legend>Toppings</legend>
+              <label class="option-card"><input type="radio" name="toppings" value="None" /><span>None</span></label>
+              <label class="option-card"><input type="radio" name="toppings" value="Macarons" checked /><span>Macarons</span></label>
+              <label class="option-card"><input type="radio" name="toppings" value="Truffles" /><span>Truffles</span></label>
+              <label class="option-card"><input type="radio" name="toppings" value="Fruit Crown" /><span>Fruit Crown</span></label>
+              <label class="option-card"><input type="radio" name="toppings" value="Cookie Crumble" /><span>Cookie Crumble</span></label>
+            </fieldset>
+
+            <div class="control-grid">
+              <label>Cake writing<select name="writing"><option value="None" selected>None</option><option value="Add writing">Add writing</option></select></label>
+              <label>Writing text<textarea name="text" rows="2" maxlength="40" placeholder="Happy Birthday" disabled></textarea></label>
+              <label>Date<input type="date" name="date" required /></label>
+            </div>
+            <label>Special requests<textarea name="notes" rows="3" placeholder="Colors, allergies, event theme, pickup or delivery notes"></textarea></label>
+            <div class="control-grid">
+              <label>Full name<input name="customer" required /></label>
+              <label>Phone number<input type="number" name="phone" required /></label>
+              <label>Address<input name="address" required /></label>
+            </div>
+            <button class="frost-btn primary wide" type="submit">Order Cake</button>
+            <p class="form-status" role="status"></p>
+          </form>
+        </section>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div><strong>Fibello Concept</strong><p>Premium coffee, handcrafted desserts, signature drinks, and elegant gatherings.</p></div>
+      <div>
+        <a href="mailto:anikajanuzi0@gmail.com">fibelloconcept@gmail.com</a>
+        <span>048 266 050</span>
+        <div class="footer-social" aria-label="Social links">
+          <a href="https://www.instagram.com/fibellosweets/?hl=en" aria-label="Instagram" target="_blank" rel="noopener">
+            <img src="fibellosweets/social-media/instagram-logo.png" alt="" />
+          </a>
+          <a href="https://www.facebook.com/fibellollc/" aria-label="Facebook" target="_blank" rel="noopener">
+            <img src="fibellosweets/social-media/facebook-logo.png" alt="" />
+          </a>
+          <a href="https://www.tiktok.com/@fibellosweets" aria-label="TikTok" target="_blank" rel="noopener">
+            <img src="fibellosweets/social-media/tiktok-logo.png" alt="" />
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="js/nav.js"></script>
+    <script type="module" src="js/custom-order.js"></script>
+  </body>
+</html>

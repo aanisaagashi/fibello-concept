@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin | Fibello Concept</title>
+    <link rel="icon" type="image/png" href="fibellosweets/fibello-logo.png" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav" aria-label="Main navigation">
+        <a class="brand" href="index.html" aria-label="Fibello home"><img src="fibellosweets/fibello-logo.png" alt="Fibello Concept logo" /></a>
+        <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="contact.html">Contact Us</a>
+          <a href="locations.html">Locations</a>
+          <a href="custom-order.html">Custom Order</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page active section admin-page">
+        <div class="page-hero compact">
+          <p class="eyebrow">Business access</p>
+          <h1>Fibello Concept Admin</h1>
+          <p>Log in with the business email to manage the desserts shown on the storefront.</p>
+        </div>
+        <form id="admin-login" class="admin-login contact-card">
+          <label>Business email<input type="email" name="email" value="hello@fibellosweets.com" required /></label>
+          <button class="frost-btn primary" type="submit">Log In</button>
+          <p class="form-status" role="status"></p>
+        </form>
+        <div id="admin-panel" class="admin-panel" hidden>
+          <form id="dessert-form" class="dessert-form contact-card">
+            <input type="hidden" name="id" />
+            <label>Name<input name="name" required /></label>
+            <label>Price<input name="price" type="number" min="1" step="0.01" required /></label>
+            <label>Description<textarea name="description" rows="2" required></textarea></label>
+            <label>Image URL<input name="image" placeholder="https://..." /></label>
+            <label>Upload image<input name="upload" type="file" accept="image/*" /></label>
+            <button class="frost-btn primary" type="submit">Save Dessert</button>
+            <button class="frost-btn ghost" type="reset">Clear</button>
+          </form>
+          <div id="admin-desserts" class="admin-desserts"></div>
+        </div>
+      </section>
+    </main>
+
+    <script type="module" src="js/nav.js"></script>
+    <script type="module" src="js/admin.js"></script>
+  </body>
+</html>

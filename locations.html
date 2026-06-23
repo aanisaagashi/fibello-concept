@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Locations | Fibello Concept</title>
+    <link rel="icon" type="image/png" href="fibellosweets/fibello-logo.png" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav" aria-label="Main navigation">
+        <a class="brand" href="index.html" aria-label="Fibello home"><img src="fibellosweets/fibello-logo.png" alt="Fibello Concept logo" /></a>
+        <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="contact.html">Contact Us</a>
+          <a class="active" href="locations.html">Locations</a>
+          <a href="custom-order.html">Custom Order</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page active">
+        <div class="page-hero compact">
+          <p class="eyebrow">Find your place</p>
+          <h1>Fibello Concept Locations</h1>
+          <p>Tap a location pin to view branch hours, address, and contact details for your next coffee, dessert, or gathering.</p>
+        </div>
+        <section class="section location-layout">
+          <div class="map-panel">
+            <div class="map-canvas" id="branch-map" aria-label="Interactive branch map">
+              <button class="map-pin active" style="--x: 32%; --y: 28%" data-branch="Fibello Shop 3"><span>3</span></button>
+              <button class="map-pin" style="--x: 52%; --y: 35%" data-branch="Fibello Concept"><span>C</span></button>
+              <button class="map-pin" style="--x: 24%; --y: 62%" data-branch="Fibello Sweet Shop 6"><span>6</span></button>
+              <button class="map-pin" style="--x: 46%; --y: 58%" data-branch="Fibello Sweet Shop 4"><span>4</span></button>
+              <button class="map-pin" style="--x: 70%; --y: 44%" data-branch="Fibello Sweet Shop"><span>1</span></button>
+              <button class="map-pin" style="--x: 78%; --y: 62%" data-branch="Fibello Sweetshop 9"><span>9</span></button>
+            </div>
+          </div>
+          <article id="location-card" class="location-card"></article>
+        </section>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div><strong>Fibello Concept</strong><p>Premium coffee, handcrafted desserts, signature drinks, and elegant gatherings.</p></div>
+      <div>
+        <a href="mailto:anikajanuzi0@gmail.com">fibelloconcept@gmail.com</a>
+        <span>048 266 050</span>
+        <div class="footer-social" aria-label="Social links">
+          <a href="https://www.instagram.com/fibellosweets/?hl=en" aria-label="Instagram" target="_blank" rel="noopener">
+            <img src="fibellosweets/social-media/instagram-logo.png" alt="" />
+          </a>
+          <a href="https://www.facebook.com/fibellollc/" aria-label="Facebook" target="_blank" rel="noopener">
+            <img src="fibellosweets/social-media/facebook-logo.png" alt="" />
+          </a>
+          <a href="https://www.tiktok.com/@fibellosweets" aria-label="TikTok" target="_blank" rel="noopener">
+            <img src="fibellosweets/social-media/tiktok-logo.png" alt="" />
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="js/nav.js"></script>
+    <script type="module" src="js/locations.js"></script>
+  </body>
+</html>

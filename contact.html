@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us | Fibello Concept</title>
+    <link rel="icon" type="image/png" href="fibellosweets/fibello-logo.png" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav" aria-label="Main navigation">
+        <a class="brand" href="index.html" aria-label="Fibello home">
+          <img src="fibellosweets/fibello-logo.png" alt="Fibello Concept logo" />
+        </a>
+        <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a class="active" href="contact.html">Contact Us</a>
+          <a href="locations.html">Locations</a>
+          <a href="custom-order.html">Custom Order</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page active">
+        <div class="page-hero compact">
+          <p class="eyebrow">Say hello</p>
+          <h1>Contact Fibello Concept</h1>
+          <p>Questions about coffee, desserts, gatherings, custom orders, and special moments all start here.</p>
+        </div>
+        <section class="contact-layout section">
+          <div class="contact-card">
+            <h2>Visit Details</h2>
+            <p><strong>Phone:</strong> <a href="tel:+15550193221">048 266 050</a></p>
+            <p><strong>Email:</strong> <a href="mailto:anikajanuzi0@gmail.com">fibelloconcept@gmail.com</a></p>
+            <p><strong>Hours:</strong> Open every day for premium coffee, handcrafted desserts, signature drinks, and relaxed gatherings.</p>
+            <div class="social-row" aria-label="Social links">
+              <a class="social-dessert" href="https://www.instagram.com/fibellosweets/?hl=en" aria-label="Instagram" target="_blank" rel="noopener">
+                <img src="fibellosweets/social-media/instagram-logo.png" alt="" />
+              </a>
+              <a class="social-dessert" href="https://www.facebook.com/fibellollc/" aria-label="Facebook" target="_blank" rel="noopener">
+                <img src="fibellosweets/social-media/facebook-logo.png" alt="" />
+              </a>
+              <a class="social-dessert" href="https://www.tiktok.com/@fibellosweets" aria-label="TikTok" target="_blank" rel="noopener">
+                <img src="fibellosweets/social-media/tiktok-logo.png" alt="" />
+              </a>
+            </div>
+          </div>
+          <form class="contact-form" id="contact-form" action="https://formsubmit.co/anikajanuzi0@gmail.com" method="POST">
+            <input type="hidden" name="_subject" value="New Fibello Concept contact message" />
+            <input type="hidden" name="_template" value="table" />
+            <input type="hidden" name="_captcha" value="false" />
+            <h2>Send a Message</h2>
+            <label>Name<input name="name" required /></label>
+            <label>Email<input type="email" name="email" required /></label>
+            <label>Message<textarea name="message" rows="5" required></textarea></label>
+            <button class="frost-btn primary" type="submit">Send Message</button>
+            <p class="form-status" role="status"></p>
+          </form>
+        </section>
+        <section class="section faq">
+          <h2>FAQ</h2>
+          <details>
+            <summary>Can I visit for coffee and dessert?</summary>
+            <p>Yes. Fibello Concept is designed for everyday visits, friendly meetups, work sessions, and relaxing evenings.</p>
+          </details>
+          <details>
+            <summary>Do you host events or gatherings?</summary>
+            <p>Yes. Our modern, comfortable setting works well for celebrations, business meetings, and special moments with family and friends.</p>
+          </details>
+          <details>
+            <summary>Can I request custom desserts?</summary>
+            <p>Yes. Share your theme, colors, allergy notes, and timing, and our team will confirm what is possible.</p>
+          </details>
+        </section>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div><strong>Fibello Concept</strong><p>Premium coffee, handcrafted desserts, signature drinks, and elegant gatherings.</p></div>
+      <div>
+        <a href="mailto:anikajanuzi0@gmail.com">fibelloconcept@gmail.com</a>
+        <span>048 266 050</span>
+        <div class="footer-social" aria-label="Social links">
+          <a href="https://www.instagram.com/fibellosweets/?hl=en" aria-label="Instagram" target="_blank" rel="noopener">
+            <img src="fibellosweets/social-media/instagram-logo.png" alt="" />
+          </a>
+          <a href="https://www.facebook.com/fibellollc/" aria-label="Facebook" target="_blank" rel="noopener">
+            <img src="fibellosweets/social-media/facebook-logo.png" alt="" />
+          </a>
+          <a href="https://www.tiktok.com/@fibellosweets" aria-label="TikTok" target="_blank" rel="noopener">
+            <img src="fibellosweets/social-media/tiktok-logo.png" alt="" />
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="js/nav.js"></script>
+    <script type="module" src="js/contact.js"></script>
+  </body>
+</html>
